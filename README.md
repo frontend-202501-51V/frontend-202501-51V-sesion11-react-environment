@@ -24,45 +24,6 @@ Al finalizar este workshop, serás capaz de:
 
 ---
 
-## 🗺️ Mapa de progresión de conocimientos
-
-Este workshop está organizado en bloques numerados y progresivos. Cada bloque enlaza a un archivo específico donde encontrarás teoría, ejemplos, ejercicios y reflexiones para que avances de lo conceptual a lo práctico, asegurando un aprendizaje profundo y aplicable.
-
-### 1. Fundamentos de React
-
-- [¿Qué es React? Historia y ventajas](1-fundamentos/que-es-react.md)  
-  Descubre el origen de React, su evolución, ventajas frente a otras tecnologías y por qué es clave en el desarrollo frontend moderno.
-
-### 2. Preparando el entorno
-
-- [Instalación de Node.js y npm](2-entorno/instalacion-node-npm.md)  
-  Guía paso a paso para instalar y verificar Node.js y npm, fundamentales para cualquier proyecto React.
-- [Herramientas recomendadas y configuración inicial](2-entorno/herramientas-configuracion.md)  
-  Aprende a configurar Visual Studio Code, instalar extensiones útiles y aplicar buenas prácticas desde el inicio.
-
-### 3. Primer proyecto React
-
-- [Creación de un proyecto con Create React App](3-primer-proyecto/crear-proyecto.md)  
-  Instrucciones detalladas para crear tu primer proyecto React, entender la estructura generada y los comandos esenciales.
-- [Estructura básica de carpetas y archivos](3-primer-proyecto/estructura-proyecto.md)  
-  Explicación de la anatomía de un proyecto React y recomendaciones para organizar tu código de forma profesional.
-- [Ejecución y pruebas iniciales](3-primer-proyecto/ejecucion-pruebas.md)  
-  Aprende a ejecutar tu app, verificar que todo funcione y resolver los errores más comunes al comenzar.
-
-### 4. Buenas prácticas iniciales (opcional)
-
-- [Buenas prácticas en la organización y escritura de código](4-buenas-practicas/buenas-practicas.md)  
-  Consejos prácticos para mantener tu proyecto ordenado, escalable y fácil de mantener desde el primer día.
-
----
-
-## 📚 Rutas de aprendizaje y práctica guiada
-
-La ruta de aprendizaje está organizada en estos bloques temáticos.  
-Cada bloque cuenta con una sección que explica los conceptos clave, ejercicios prácticos y buenas prácticas. Explora cada bloque para avanzar de lo fundamental a lo avanzado y refuerza tu aprendizaje con los ejercicios y reflexiones propuestas.
-
----
-
 ## 📋 Requisitos previos
 
 - Conocimientos básicos de JavaScript.
