@@ -29,31 +29,31 @@ Al finalizar este workshop, serás capaz de:
 
 ### Bloque 1: Fundamentos de React
 
-- [¿Qué es React y por qué usarlo?](1-fundamentos/que-es-react.md)
-- [Historia y evolución de React](1-fundamentos/historia-evolucion.md)
-- [Comparación con otras bibliotecas y frameworks](1-fundamentos/comparacion-frameworks.md)
-- [Conceptos clave: Virtual DOM, componentes y estado](1-fundamentos/conceptos-clave.md)
+- [¿Qué es React y por qué usarlo?](1-fundamentos/1-que-es-react.md)
+- [Historia y evolución de React](1-fundamentos/2-historia-evolucion.md)
+- [Comparación con otras bibliotecas y frameworks](1-fundamentos/3-comparacion-frameworks.md)
+- [Conceptos clave: Virtual DOM, componentes y estado](1-fundamentos/4-conceptos-clave.md)
 
 ### Bloque 2: Configuración del Entorno de Desarrollo
 
-- [Requisitos del sistema y herramientas necesarias](2-entorno/requisitos-sistema.md)
-- [Instalación de Node.js, npm y herramientas auxiliares](2-entorno/instalacion-nodejs.md)
-- [Configuración del editor de código y extensiones](2-entorno/configuracion-editor.md)
-- [Herramientas de desarrollo y debugging](2-entorno/herramientas-desarrollo.md)
+- [Requisitos del sistema y herramientas necesarias](2-entorno/1-requisitos-sistema.md)
+- [Instalación de Node.js, npm y herramientas auxiliares](2-entorno/2-instalacion-nodejs.md)
+- [Configuración del editor de código y extensiones](2-entorno/3-configuracion-editor.md)
+- [Herramientas de desarrollo y debugging](2-entorno/4-herramientas-desarrollo.md)
 
 ### Bloque 3: Creación de Proyectos React
 
-- [Create React App: instalación y uso](3-proyectos/create-react-app.md)
-- [Vite: alternativa moderna y rápida](3-proyectos/vite-react.md)
-- [Estructura de archivos y carpetas](3-proyectos/estructura-proyecto.md)
-- [Scripts disponibles y comandos útiles](3-proyectos/scripts-comandos.md)
+- [Create React App: instalación y uso](3-proyectos/1-create-react-app.md)
+- [Vite: alternativa moderna y rápida](3-proyectos/2-vite-react.md)
+- [Estructura de archivos y carpetas](3-proyectos/3-estructura-proyecto.md)
+- [Scripts disponibles y comandos útiles](3-proyectos/4-scripts-comandos.md)
 
 ### Bloque 4: Primeros Pasos con React
 
-- [Tu primer componente React](4-primeros-pasos/primer-componente.md)
-- [Entendiendo JSX básico](4-primeros-pasos/jsx-basico.md)
-- [Modificando la aplicación inicial](4-primeros-pasos/modificar-app.md)
-- [Buenas prácticas desde el inicio](4-primeros-pasos/buenas-practicas.md)
+- [Tu primer componente React](4-primeros-pasos/1-primer-componente.md)
+- [Entendiendo JSX básico](4-primeros-pasos/2-jsx-basico.md)
+- [Modificando la aplicación inicial](4-primeros-pasos/3-modificar-app.md)
+- [Buenas prácticas desde el inicio](4-primeros-pasos/4-buenas-practicas.md)
 
 ---
 
@@ -62,16 +62,16 @@ Al finalizar este workshop, serás capaz de:
 La ruta de aprendizaje está organizada en bloques temáticos progresivos.  
 Cada bloque cuenta con archivos que explican los conceptos paso a paso, con ejemplos prácticos y ejercicios. Explora cada bloque para avanzar de lo fundamental a lo aplicado:
 
-- **[Fundamentos de React](1-fundamentos/que-es-react.md):**  
+- **[Fundamentos de React](1-fundamentos/README.md):**  
   Comprende qué es React, su propósito y ventajas en el desarrollo moderno.
 
-- **[Configuración del Entorno](2-entorno/requisitos-sistema.md):**  
+- **[Configuración del Entorno](2-entorno/README.md):**  
   Aprende a configurar tu entorno de desarrollo de forma profesional.
 
-- **[Creación de Proyectos](3-proyectos/create-react-app.md):**  
+- **[Creación de Proyectos](3-proyectos/README.md):**  
   Domina las herramientas para crear y gestionar proyectos React.
 
-- **[Primeros Pasos](4-primeros-pasos/primer-componente.md):**  
+- **[Primeros Pasos](4-primeros-pasos/README.md):**  
   Construye tu primera aplicación y entiende los conceptos básicos.
 
 En cada bloque encontrarás:
@@ -284,69 +284,69 @@ React es una **biblioteca de JavaScript** desarrollada por Meta (Facebook) para 
 
 2. **Modificar App.js:**
 
-   ```jsx
-   function App() {
-     const nombre = "Tu Nombre";
-     const profesion = "Frontend Developer";
-     
-     return (
-       <div className="App">
-         <header className="App-header">
-           <h1>¡Hola! Soy {nombre}</h1>
-           <p>Especialista en {profesion}</p>
-           <p>Esta es mi primera aplicación React 🚀</p>
-           <div>
-             <h2>Tecnologías que estoy aprendiendo:</h2>
-             <ul>
-               <li>React</li>
-               <li>JavaScript ES6+</li>
-               <li>HTML5 & CSS3</li>
-               <li>Git & GitHub</li>
-             </ul>
-           </div>
-         </header>
-       </div>
-     );
-   }
-   
-   export default App;
-   ```
+```jsx
+function App() {
+  const nombre = "Tu Nombre";
+  const profesion = "Frontend Developer";
+  
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>¡Hola! Soy {nombre}</h1>
+        <p>Especialista en {profesion}</p>
+        <p>Esta es mi primera aplicación React 🚀</p>
+        <div>
+          <h2>Tecnologías que estoy aprendiendo:</h2>
+          <ul>
+            <li>React</li>
+            <li>JavaScript ES6+</li>
+            <li>HTML5 & CSS3</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
 
 3. **Personalizar los estilos en App.css:**
 
-   ```css
-   .App {
-     text-align: center;
-   }
-   
-   .App-header {
-     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-     padding: 40px;
-     color: white;
-     min-height: 100vh;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-   }
-   
-   .App-header h1 {
-     font-size: 2.5rem;
-     margin-bottom: 1rem;
-   }
-   
-   .App-header ul {
-     list-style: none;
-     padding: 0;
-   }
-   
-   .App-header li {
-     background: rgba(255, 255, 255, 0.1);
-     margin: 0.5rem 0;
-     padding: 0.5rem 1rem;
-     border-radius: 5px;
-   }
-   ```
+```css
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.App-header ul {
+  list-style: none;
+  padding: 0;
+}
+
+.App-header li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+```
 
 ### Ejercicio 3: Explorar la estructura del proyecto
 
@@ -668,7 +668,3 @@ Para autorizaciones especiales, contacta a [info@skills4up.com](mailto:info@skil
 - **Aplicación:** Usa este formato para enseñar otros temas de React (componentes, hooks, consumo de APIs, etc.), mostrando siempre ejemplos claros, incrementando la dificultad y explicando el contexto de uso.
 - **Recomendación:** Para cada nuevo tema, inicia con una breve definición, luego presenta ejemplos básicos y avanza hacia casos de uso más complejos o frecuentes en el desarrollo profesional.
 - **Importante:** Solo utiliza conceptos del tema que se está enseñando. Evita incluir conceptos más avanzados o que aún no se hayan visto, para no generar confusión y asegurar el aprendizaje progresivo.
-
----
-
-¡Comienza tu viaje en React explorando los [fundamentos básicos](1-fundamentos/que-es-react.md)!
