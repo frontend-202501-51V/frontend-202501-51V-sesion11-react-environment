@@ -1,0 +1,154 @@
+.customcss {
+  /* Material Design Button Styles */
+  /* fuente */
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* bold / negrita */
+  font-weight: 500;
+   /*defecto 16px  */
+  font-size: 14px;
+  /* alto de la linea del parrafo 2x */
+  line-height: 36px;
+  /* espaciado de las letras */
+  letter-spacing: 0.25px;
+  /* mayuscula */
+  text-transform: uppercase;
+
+  border: none;
+  /* redondeado a los bordes */
+  border-radius: 4px;
+  /* arriba abjo de 0px, izquierda derecha en 16px */
+  padding: 0 16px;
+  /* ancho minimo de 64px */
+  min-width: 64px;
+  /* alto 36px */
+  height: 36px;
+
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Elevation (shadow) */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 2px rgba(0, 0, 0, 0.08);
+}
+
+/* Primary Button */
+.btn-primary.customcss {
+  background-color: #1976d2;
+  color: white;
+}
+
+.btn-primary.customcss:hover {
+  background-color: #1565c0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+.btn-primary.customcss:active {
+  background-color: #0d47a1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.16);
+}
+
+/* Secondary Button */
+.btn-secondary.customcss {
+  background-color: #424242;
+  color: white;
+}
+
+.btn-secondary.customcss:hover {
+  background-color: #303030;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+.btn-secondary.customcss:active {
+  background-color: #212121;
+}
+
+/* Success Button */
+.btn-success.customcss {
+  background-color: #388e3c;
+  color: white;
+}
+
+.btn-success.customcss:hover {
+  background-color: #2e7d32;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+/* Danger Button */
+.btn-danger.customcss {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.btn-danger.customcss:hover {
+  background-color: #c62828;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+/* Warning Button */
+.btn-warning.customcss {
+  background-color: #f57c00;
+  color: white;
+}
+
+.btn-warning.customcss:hover {
+  background-color: #ef6c00;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+/* Info Button */
+.btn-info.customcss {
+  background-color: #0288d1;
+  color: white;
+}
+
+.btn-info.customcss:hover {
+  background-color: #0277bd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+/* Ripple Effect */
+.customcss::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.customcss:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Disabled State */
+.customcss:disabled {
+  background-color: rgba(0, 0, 0, 0.12) !important;
+  color: rgba(0, 0, 0, 0.26) !important;
+  box-shadow: none !important;
+  cursor: not-allowed;
+}
+
+/* Focus State */
+.customcss:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 8px rgba(25, 118, 210, 0.4);
+}
+
+/* Responsive Design */
+/* cuando no sea mayor a 768px entonces se aplica estos estilos */
+@media (max-width: 768px) {
+  .customcss {
+    font-size: 12px;
+    padding: 0 12px;
+    height: 32px;
+    line-height: 32px;
+    min-width: 56px;
+  }
+}
